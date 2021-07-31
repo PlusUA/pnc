@@ -1,0 +1,111 @@
+{{ define "donate" }} {{ template "header" .}}
+
+
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
+            <h1 class="mt-4">Donate</h1>
+            <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+                <li class="breadcrumb-item active">Donate</li>
+            </ol>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3>Thanks for your support!</h3>
+                </div>
+            </div>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">BTC</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">ETH/BSC/Polygon(Matic)</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Tron(TRX)</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <img src="/btc.png" alt="bc1qaggyvdxkwarj9alh067t4sf9wvuyuhhp2v08ly" width="125" height="125"
+                        title="bc1qaggyvdxkwarj9alh067t4sf9wvuyuhhp2v08ly" /><br />
+                        &nbsp;<br />
+                    <input type="text" id="myInput0" value="bc1qaggyvdxkwarj9alh067t4sf9wvuyuhhp2v08ly" size="50"
+                        readonly="readonly">
+                    <button onclick="myFunction0()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                            <path
+                                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                            <path
+                                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                        </svg></button>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <img src="/eth.png" alt="0xbF77B8a74Db0844032cFfB3EEB487FC500765C4e" width="235" height="235"
+                        title="0xbF77B8a74Db0844032cFfB3EEB487FC500765C4e" /><br />
+                        &nbsp;<br />
+                    <input type="text" id="myInput1" value="0xbF77B8a74Db0844032cFfB3EEB487FC500765C4e" size="50"
+                        readonly="readonly">
+                    <button onclick="myFunction1()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                            <path
+                                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                            <path
+                                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                        </svg></button>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <img src="/trx.png" alt="TNvHrjyD4RsaXHjfZSYw62e7a9iJMmL5ah" width="150" height="150"
+                        title="TNvHrjyD4RsaXHjfZSYw62e7a9iJMmL5ah" /><br />
+                        &nbsp;<br />
+                    <input type="text" id="myInput2" value="TNvHrjyD4RsaXHjfZSYw62e7a9iJMmL5ah" size="50"
+                        readonly="readonly">
+                    <button onclick="myFunction2()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                            <path
+                                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                            <path
+                                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                        </svg></button>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <script>
+        function myFunction0() {
+            var copyText = document.getElementById("myInput0");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            alert("Copy to clipboard: " + copyText.value);
+        }
+    </script>
+    <script>
+        function myFunction1() {
+            var copyText = document.getElementById("myInput1");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            alert("Copy to clipboard: " + copyText.value);
+        }
+    </script>
+    <script>
+        function myFunction2() {
+            var copyText = document.getElementById("myInput2");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            alert("Copy to clipboard: " + copyText.value);
+        }
+    </script>
+
+
+    {{ template "footer" }} {{ end }}

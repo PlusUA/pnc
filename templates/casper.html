@@ -1,0 +1,39 @@
+{{ define "casper" }} {{ template "header" .}}
+
+
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
+            <h1 class="mt-4">Casper</h1>
+            <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+                <li class="breadcrumb-item active">Casper</li>
+            </ol>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3>Casper Checker</h3>
+                </div>
+                <div class="card-body"><strong>Main</strong>:<br>
+                    API Version: {{$.APIVersion}}<br>
+                    Chainspec Name: {{$.ChainspecName}}<br>
+                    Our Public Signing Key: {{$.OurPublicSigningKey}}<br>
+                    Protocol Version: {{$.ProtocolVersion}}<br>
+                    Activation Point: {{$.ActivationPoint}}<br>
+                    Build Version: {{$.BuildVersion}}<br>
+                    Starting State Root Hash: {{$.StartingStateRootHash}}<br><br>
+                    <strong>Last Added Block Info</strong><br>
+                    Hash: {{$.Hash}}<br>
+                    Timestamp: {{$.Timestamp}}<br>
+                    Era ID: {{$.EraID}}<br>
+                    Height: {{$.Height}}<br>
+                    State Root Hash: {{$.StateRootHash}}<br>
+                    Creator: {{$.Creator}}<br>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    {{ template "footer" }} {{ end }}
