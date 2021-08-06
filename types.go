@@ -2,7 +2,7 @@ package main
 
 import "time"
 
-type Response struct {
+type CasperResponse struct {
 	APIVersion            string `json:"api_version"`
 	ChainspecName         string `json:"chainspec_name"`
 	StartingStateRootHash string `json:"starting_state_root_hash"`
@@ -27,7 +27,7 @@ type Response struct {
 	BuildVersion string `json:"build_version"`
 }
 
-type auth struct {
+type casperStructure struct {
 	APIVersion            string
 	ChainspecName         string
 	StartingStateRootHash string
@@ -41,4 +41,25 @@ type auth struct {
 	ProtocolVersion       string
 	StateRootHash         string
 	Creator               string
+}
+
+type aleoStructure struct {
+	IsBootnode bool
+	IsMiner    bool
+	IsSyncing  bool
+	Launched   time.Time
+	Version    string
+}
+
+type AleoResponse struct {
+	Jsonrpc string `json:"jsonrpc"`
+	Result  struct {
+		IsBootnode    bool      `json:"is_bootnode"`
+		IsMiner       bool      `json:"is_miner"`
+		IsSyncing     bool      `json:"is_syncing"`
+		Launched      time.Time `json:"launched"`
+		ListeningAddr string    `json:"listening_addr"`
+		Version       string    `json:"version"`
+	} `json:"result"`
+	ID string `json:"id"`
 }

@@ -1,6 +1,7 @@
 package main
 
 var (
-	err error
-	a   auth
+	err        error
+	casperData casperStructure
+	aleoData   aleoStructure
 )

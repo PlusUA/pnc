@@ -18,7 +18,7 @@ func casperHandler(w http.ResponseWriter, r *http.Request) {
 			log.Fatal(w, err.Error())
 			return
 		}
-		t.ExecuteTemplate(w, "casper", a)
+		t.ExecuteTemplate(w, "casper", casperData)
 		return
 
 	}
@@ -33,22 +33,22 @@ func getCasperData() {
 	body, err := ioutil.ReadAll(res.Body)
 	checkErr(err)
 
-	var nodeData Response
+	var nodeData CasperResponse
 
 	json.Unmarshal(body, &nodeData)
 
-	a.APIVersion = nodeData.APIVersion
-	a.BuildVersion = nodeData.BuildVersion
-	a.ChainspecName = nodeData.ChainspecName
-	a.OurPublicSigningKey = nodeData.OurPublicSigningKey
-	a.StartingStateRootHash = nodeData.StartingStateRootHash
-	a.Hash = nodeData.LastAddedBlockInfo.Hash
-	a.Timestamp = nodeData.LastAddedBlockInfo.Timestamp
-	a.EraID = nodeData.LastAddedBlockInfo.EraID
-	a.Height = nodeData.LastAddedBlockInfo.Height
-	a.StateRootHash = nodeData.LastAddedBlockInfo.StateRootHash
-	a.Creator = nodeData.LastAddedBlockInfo.Creator
-	a.ActivationPoint = nodeData.NextUpgrade.ActivationPoint
-	a.ProtocolVersion = nodeData.NextUpgrade.ProtocolVersion
+	casperData.APIVersion = nodeData.APIVersion
+	casperData.BuildVersion = nodeData.BuildVersion
+	casperData.ChainspecName = nodeData.ChainspecName
+	casperData.OurPublicSigningKey = nodeData.OurPublicSigningKey
+	casperData.StartingStateRootHash = nodeData.StartingStateRootHash
+	casperData.Hash = nodeData.LastAddedBlockInfo.Hash
+	casperData.Timestamp = nodeData.LastAddedBlockInfo.Timestamp
+	casperData.EraID = nodeData.LastAddedBlockInfo.EraID
+	casperData.Height = nodeData.LastAddedBlockInfo.Height
+	casperData.StateRootHash = nodeData.LastAddedBlockInfo.StateRootHash
+	casperData.Creator = nodeData.LastAddedBlockInfo.Creator
+	casperData.ActivationPoint = nodeData.NextUpgrade.ActivationPoint
+	casperData.ProtocolVersion = nodeData.NextUpgrade.ProtocolVersion
 
 }

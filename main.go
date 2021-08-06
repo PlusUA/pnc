@@ -22,6 +22,7 @@ func main() {
 	gorilla := mux.NewRouter()
 	gorilla.HandleFunc("/", indexHandler)
 	gorilla.HandleFunc("/casper", casperHandler)
+	gorilla.HandleFunc("/aleo", aleoHandler)
 	gorilla.HandleFunc("/donate", donateHandler)
 	gorilla.PathPrefix("/").Handler(http.FileServer(http.Dir("./assets/")))
 	http.ListenAndServe(":8808", gorilla)

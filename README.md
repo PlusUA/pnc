@@ -1,3 +1,10 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![Twitter][twitter-shield]][twitter-url]
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -37,6 +44,7 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#donate">Donate</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -47,7 +55,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here is a simple utility with which you can get information about the nodes without using a remote connection to the server (ssh).
+Here is a simple utility with which you can get information about the nodes without using a remote connection to the server (ssh). Now support Aleo and Casper.
 that's why:
 
 * Without access to ssh
@@ -112,7 +120,18 @@ This is an example of how to list things you need to use the software and how to
 
 See the [open issues](https://github.com/PlusUA/pnc/issues) for a list of proposed features (and known issues).
 
-In next releases maybe will be realized getting info from Minima/Aleo/Nym/Zeitgeist/IronFish/BitCountry
+In next releases maybe will be realized getting info from Minima/Nym/Zeitgeist/IronFish/BitCountry
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 <!-- LICENSE -->
 ## License
@@ -147,3 +166,17 @@ Project Link: [https://github.com/PlusUA/pnc](https://github.com/PlusUA/pnc)
 * [Casper Labs](https://casperlabs.io/)
 * [Casper TestNet](https://testnet.cspr.live/)
 * [JQuery](https://jquery.com)
+* [Shields.io](https://shields.io)
+
+[contributors-shield]: https://img.shields.io/github/contributors/PlusUA/pnc
+[contributors-url]: https://github.com/PlusUA/pnc/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/PlusUA/pnc
+[forks-url]: https://github.com/PlusUA/pnc/network/members
+[stars-shield]: https://img.shields.io/github/stars/PlusUA/pnc
+[stars-url]: https://github.com/PlusUA/pnc/stargazers
+[issues-shield]: https://img.shields.io/github/issues/PlusUA/pnc
+[issues-url]: https://github.com/PlusUA/pnc/issues
+[license-shield]: https://img.shields.io/github/license/PlusUA/pnc
+[license-url]: https://github.com/PlusUA/pnc/blob/main/LICENSE
+[twitter-shield]: https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FPlusUA%2Fpnc%2F
+[twitter-url]: https://twitter.com/huan_carlos

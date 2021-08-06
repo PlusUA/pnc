@@ -1,6 +1,8 @@
 pnc
 main
 .DS_Store
+TODO.md
+pnc.log
 
 # Binaries for programs and plugins
 *.exe
